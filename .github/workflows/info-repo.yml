@@ -1,0 +1,11 @@
+name: Info del Repo
+on: [push]
+jobs:
+    mostrar_info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Imprimir información
+              run: |
+                  echo "Repositorio: ${{ github.repository }}"
+                  echo "Usuario: ${{ github.actor }}"
+                  echo "Rama: ${{ github.ref }}"
