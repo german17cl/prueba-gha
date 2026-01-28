@@ -1,0 +1,19 @@
+name: Comandos básicos
+on:
+    push:
+        paths:
+            - "scripts/**"
+jobs:
+    comandos:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Listar archivos
+              run: ls -la
+
+            - name: Versión de Linux
+              run: uname -a
+
+            - name: Fecha actual
+              run: date
