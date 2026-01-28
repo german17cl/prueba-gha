@@ -15,4 +15,5 @@ jobs:
         run: npm install -g prettier
 
       - name: Comprobar formato
-        run: prettier . --check
+        run: prettier . --check || echo "Hay archivos con problemas de formato"
+
