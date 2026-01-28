@@ -1,0 +1,1 @@
+echo 'function hola(){console.log("hola")}'
