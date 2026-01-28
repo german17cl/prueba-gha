@@ -1,1 +1,3 @@
-echo 'function hola(){console.log("hola")}'
+function hola() {
+  console.log("hola");
+}
